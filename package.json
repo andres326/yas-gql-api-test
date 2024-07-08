@@ -1,0 +1,44 @@
+{
+  "name": "yas-gql-api",
+  "version": "1.0.0",
+  "description": "A GQL Api for YAS test",
+  "type": "module",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "dev": "ts-node-dev --respawn ./src/index.ts",
+    "start": "npm run compile && node --watch ./dist/index.js",
+    "test": "jest",
+    "lint-and-format": "npm run format && npm run lint",
+    "lint": "eslint",
+    "format": "prettier --write \"**/*.+(js|ts|json)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andres326/yas-gql-api-test.git"
+  },
+  "author": "Pablo Cubillos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andres326/yas-gql-api-test/issues"
+  },
+  "homepage": "https://github.com/andres326/yas-gql-api-test#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@types/node": "^20.14.10",
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.8.0",
+    "prettier": "3.3.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "graphql": "^16.9.0",
+    "graphql-tag": "^2.12.6"
+  }
+}
