@@ -1,0 +1,7 @@
+type Query {
+  getAvailableRoom: [Room!]!
+}
+
+type Room {
+  id: ID!
+}
